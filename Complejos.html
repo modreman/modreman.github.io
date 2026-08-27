@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8"><title>Presentación: Números Complejos</title>
+
+<style>
+body { margin:0; font-family:Arial, sans-serif; background:#fff; color:#000; }
+.slide { display:none; padding:60px; height:100vh; text-align:center; }
+.active { display:block; }
+h1 { margin-bottom:20px; color:#ffd700; }
+h2 { margin-bottom:15px; color:#87ceeb; }
+p, li { font-size:20px; line-height:1.5; }
+ul { margin-top:15px; text-align:left; display:inline-block; }
+img { max-height:300px; margin-top:20px; border:2px solid #fff; }
+.controls { position:fixed; bottom:20px; left:50%; transform:translateX(-50%); }
+button { margin:0 10px; padding:10px 20px; font-size:16px; cursor:pointer; }
+</style><!-- Configuración de MathJax -->
+<script>
+window.MathJax = {
+tex: {
+inlineMath: [['$', '$'], ['\\(', '\\)']],
+displayMath: [['$$', '$$'], ['\
+\[', '\\]
+']]
+},
+options: {
+processHtmlClass: 'tex'
+}
+};
+</script><!-- Carga correcta de MathJax desde jsDelivr -->
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<!-- Portada -->
+<div class="slide active">
+<h1 style="color: rgb(51, 51, 153);">Introducción a los
+Números Complejos</h1>
+<h2 style="color: rgb(51, 51, 153);">Modelos Matemáticos -
+Ingeniería Mecánica</h2>
+<p>Profesor: Mauricio Odreman</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Number-systems_%28NZQRC%29.svg" alt="Plano complejo"> </div>
+<!-- Definición -->
+<div class="slide">
+<h1>Definición</h1>
+<p>Un número complejo se escribe como:</p>
+<p><strong>z = a + bi</strong></p>
+<ul>
+<li>a: parte real</li>
+<li>b: parte imaginaria</li>
+</ul>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Complex_number_illustration.svg" alt="Representación gráfica de z=a+bi"> </div>
+<!-- Conjugado -->
+<div class="slide">
+<h1>Conjugado</h1>
+<p>El conjugado de número complejo se escribe como:</p>
+<p><strong>z = a - bi</strong></p>
+<ul>
+</ul>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Complex_conjugate_picture.svg" alt="Representación gráfica de z=a-bi"> </div>
+<!-- Operaciones -->
+<div class="slide">
+<h1>Operaciones Básicas</h1>
+<ul>
+<li>Suma: (a + bi) + (c + di) = (a+c) + (b+d)i</li>
+<li>Resta: (a + bi) - (c + di) = (a-c) + (b-d)i</li>
+<li>Multiplicación: (a+bi)(c+di) = (ac-bd) + (ad+bc)i</li>
+</ul>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/70/ComplexAddition.svg" alt="Suma de números complejos"> </div>
+<!-- Potencias de i -->
+<div class="slide">
+<h1>Potencias de i</h1>
+<p>Recordemos:</p>
+<ul>
+<li> \[ i=\sqrt{-1} \] </li>
+<li> \[ i^2 = -1 \]</li>
+<li> \[i^3 = -i \]</li>
+<li>\[ i^4 = 1 \] (ciclo cada 4)</li>
+</ul>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/90-Degree_Rotations_in_the_Complex_Plane.svg" alt="Ciclo de potencias de i"> </div>
+<!-- Forma trigonométrica -->
+<div class="slide">
+<h1>Forma Trigonométrica</h1>
+<p>z = r(cosθ + i·senθ)</p>
+<ul>
+<li>r = |z| = \[ \sqrt{a^2+b^2} \] </li>
+<li> \[\theta = arctan(b/a) \] </li>
+</ul>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Complex_number.svg"></div>
+<!-- Teorema de Moivre -->
+<div class="slide">
+<h1>Teorema de Moivre</h1>
+<p>(r(cosθ + i·senθ))ⁿ = rⁿ(cos(nθ) + i·sen(nθ))</p>
+<p>El teorema de De Moivre es una herramienta fundamental en
+álgebra que permite calcular potencias y raíces de números complejos
+expresados en forma polar (o trigonométrica) de manera rápida y
+sencilla.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Complex_numbers_multiplication_example.svg" alt="Multiplicación en forma polar"> </div>
+<!-- Raíces enésimas -->
+<div class="slide">
+<h1>Raíces enésimas</h1>
+<p>Las n raíces de z = r(cosθ + i·senθ) son:</p>
+<p>r^(1/n)(cos((θ+2πk)/n) + i·sen((θ+2πk)/n)), k=0,...,n-1</p>
+\[ z^5=1 \] Las 5 soluciones de la raíz quinta de la unidad en el plano
+complejo. <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/One5Root.svg/960px-One5Root.svg.png" alt="Raíces de la unidad"> </div>
+<div class="slide">
+<h1>La fórmula de Euler</h1>
+\[ e^{ix} = \cos(x) + i \sin(x) \]
+<p>La fórmula de Euler o relación de Euler, atribuida a Leonhard
+Euler, establece el teorema, en el que la relación fundamental entre
+las funciones trigonométricas y la función exponencial compleja.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Euler%27s_formula.svg/960px-Euler%27s_formula.svg.png" alt="Euler"> </div>
+<!-- Raíces enésimas -->
+<!-- Controles -->
+<div class="controls"> <button onclick="prevSlide()">Anterior</button>
+<button onclick="nextSlide()">Siguiente</button> </div>
+<script>
+let current = 0;
+const slides = document.querySelectorAll('.slide');
+function showSlide(index) {
+slides[current].classList.remove('active');
+current = (index + slides.length) % slides.length;
+slides[current].classList.add('active');
+}
+function nextSlide() { showSlide(current + 1); }
+function prevSlide() { showSlide(current - 1); }
+</script>
+</body></html>
