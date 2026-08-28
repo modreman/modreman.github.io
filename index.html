@@ -1,6 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+ content="width=device-width, initial-scale=1.0">
+  <title>Mi Portal de Matemáticas</title>
+  <style>
+:root {
+--primary: #1e3a8a;
+--primary-hover: #3b82f6;
+--bg: #f8fafc;
+--card-bg: #ffffff;
+--text: #1e293b;
+--text-light: #64748b;
+}
+body {
+font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+background-color: var(--bg);
+color: var(--text);
+line-height: 1.6;
+margin: 0;
+padding: 40px 20px;
+}
+.container {
+max-width: 1000px;
+margin: 0 auto;
+}
+header {
+text-align: center;
+margin-bottom: 50px;
+}
+h1 {
+color: var(--primary);
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+.subtitle {
+color: var(--text-light);
+font-size: 1.1rem;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 25px;
+}
+.card {
+background: var(--card-bg);
+border-radius: 12px;
+padding: 30px;
+text-decoration: none;
+color: inherit;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+border: 1px solid #e2e8f0;
+transition: all 0.3s ease;
+display: flex;
+flex-direction: column;
+}
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.1), 0 4px 6px -2px rgba(30, 58, 138, 0.05);
+border-color: var(--primary-hover);
+}
+.card h2 {
+color: var(--primary);
+margin-top: 0;
+font-size: 1.4rem;
+margin-bottom: 12px;
+}
+.card p {
+color: var(--text-light);
+font-size: 0.95rem;
+margin-bottom: 20px;
+flex-grow: 1;
+}
+.card .btn {
+display: inline-block;
+color: var(--primary);
+font-weight: 600;
+font-size: 0.9rem;
+text-align: right;
+}
+.card:hover .btn {
+color: var(--primary-hover);
+text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+<!-- Pégalo justo debajo de esta línea --><!-- Sección del Encabezado Académico -->
+<div style="text-align: center;" class="contenedor-logo"><img
+ src="cetys.jpg" alt="Logo de CETYS Universidad"
+ class="logo">
+</div>
+<div style="text-align: center;" class="titulo">
+<h1>Portal de Matemáticas Universitarias</h1>
+<big><big>Repositorio de apuntes, temarios y
+recursos académicos</big></big></div>
+<div style="text-align: center;"></div>
+<div style="text-align: center;" class="autores"><a
+ href="#">Mauricio Odreman Vera</a><sup>*</sup>
+</div>
+<div style="text-align: center;"></div>
+<div style="text-align: center;" class="institucion">Cetys
+Universidad, Tijuana</div>
+<!-- Aquí continuará el resto del contenido que ya tenías en tu archivo -->
+<div class="container"> <header> </header>
+<p class="subtitle">Repositorio de apuntes, temarios y
+recursos académicos</p>
+<div class="grid"><!-- Curso 1 --> <a
+ href="AlgebraLineal/AlgebraLineal.html" class="card">
+<h2>Álgebra Lineal</h2>
+<p>Espacios vectoriales, matrices, determinantes, sistemas de
+ecuaciones lineales y transformaciones lineales.</p>
+<div class="btn">Ver curso →</div>
+</a><!-- Curso 2 --> <a
+ href="Complejos/Complejos.html" class="card">
+<h2>Números Complejos</h2>
+<p>Forma binómica, polar y trigonométrica, teorema de De Moivre,
+potencias y raíces de números imaginarios.</p>
+<div class="btn">Ver curso →</div>
+</a><!-- Curso 3 --> <a
+ href="Modelos/Modelos.html" class="card">
+<h2>Modelos Matemáticos</h2>
+<p>Modelado de fenómenos mediante ecuaciones discretas y
+continuas, optimización y análisis de datos estadísticos.</p>
+<div class="btn">Ver curso →</div>
+</a> </div>
+</div>
+
+
+
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portal de Matemáticas</title>
