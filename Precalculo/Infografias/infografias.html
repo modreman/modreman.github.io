@@ -8,19 +8,57 @@
 <h1>INFOGRAFIAS</h1>
 
 <h1><big>Infografías realizadas por los estudiantes de quinto semestre de Ingeniería Mecánica.</big></h1>
-    <big><big>🎯 Objetivo:
+<big><big>🎯 Objetivo:
 Crear una infografía clara, atractiva y bien organizada que explique
-  un tema de matemáticas de forma sencilla y útil para tus compañeros de 1er semestre.</big></big></div>
- <p style="margin-bottom: 20px;">NOTA: UN CLICK A LA IMAGEN Y DESCARGA EL PDF.</p>
+un tema de matemáticas de forma sencilla y útil para tus compañeros de 1er semestre.</big></big>
+<p style="margin-bottom: 20px;">NOTA: UN CLICK A LA IMAGEN Y DESCARGA EL PDF.</p>
 
-<a href="limites.pdf" download="limites.pdf">
-  <img src="imagenes/limites.jpg" alt="Vista previa del PDF" style="max-width: 100%; height: auto; border: 1px solid #ccc; cursor: pointer;">
-</a>
+<!-- 1. AGREGAMOS ESTILOS CSS PARA CONTROLAR LAS FILAS DE 3 -->
+<style>
+  .galeria-grid {
+    display: grid;
+    /* Crea 3 columnas iguales */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Espacio de separación entre las imágenes */
+    gap: 20px; 
+    margin-top: 20px;
+  }
 
-<a href="lineal.pdf" download="limites.pdf">
-  <img src="imagenes/lineal.jpg" alt="Vista previa del PDF" style="max-width: 100%; height: auto; border: 1px solid #ccc; cursor: pointer;">
-</a>
+  .galeria-grid a img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  /* Ajuste para celulares: se ponen de 1 en 1 para que no se vean diminutas */
+  @media (max-width: 768px) {
+    .galeria-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>
+
+<!-- 2. ENVOLVEMOS LOS ENLACES EN EL NUEVO CONTENEDOR -->
+<div class="galeria-grid">
+
+  <a href="limites.pdf" download="limites.pdf">
+    <img src="imagenes/limites.jpg" alt="Vista previa del PDF">
+  </a>
+
+  <a href="lineal.pdf" download="lineal.pdf">
+    <img src="imagenes/lineal.jpg" alt="Vista previa del PDF">
+  </a>
+
+   <a href="lineal.pdf" download="lineal.pdf">
+    <img src="imagenes/lineal.jpg" alt="Vista previa del PDF">
+  </a>
+  <!-- Aquí puedes meter la tercera imagen para completar la primera fila -->
+
 </div>
+
 <!-- Menú de navegación corregido --> 
 <br>
 </body></html>
+
