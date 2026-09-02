@@ -2,211 +2,138 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
- content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números Complejos - CETYS</title>
  
   <style>
-:root {
---primary: #1e3a8a;
---primary-hover: #3b82f6;
---bg: #f8fafc;
---card-bg: #ffffff;
---text: #1e293b;
---text-light: #64748b;
-}
-body {
-font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-background-color: var(--bg);
-color: var(--text);
-line-height: 1.6;
-margin: 0;
-padding: 40px 20px;
-}
-.container {
-max-width: 1000px;
-margin: 0 auto;
-}
-header {
-text-align: center;
-margin-bottom: 50px;
-}
-h1 {
-color: var(--primary);
-font-size: 2.5rem;
-margin-bottom: 10px;
-}
-.subtitle {
-color: var(--text-light);
-font-size: 1.1rem;
-}
-.grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 25px;
-}
-.card {
-background: var(--card-bg);
-border-radius: 12px;
-padding: 30px;
-text-decoration: none;
-color: inherit;
-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-border: 1px solid #e2e8f0;
-transition: all 0.3s ease;
-display: flex;
-flex-direction: column;
-}
-.card:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.1), 0 4px 6px -2px rgba(30, 58, 138, 0.05);
-border-color: var(--primary-hover);
-}
-.card h2 {
-color: var(--primary);
-margin-top: 0;
-font-size: 1.4rem;
-margin-bottom: 12px;
-}
-.card p {
-color: var(--text-light);
-font-size: 0.95rem;
-margin-bottom: 20px;
-flex-grow: 1;
-}
-.card .btn {
-display: inline-block;
-color: var(--primary);
-font-weight: 600;
-font-size: 0.9rem;
-text-align: right;
-}
-.card:hover .btn {
-color: var(--primary-hover);
-text-decoration: underline;
-}
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport"
- content="width=device-width, initial-scale=1.0">
-  <style>
-:root {
---primary: #1e3a8a;
---primary-hover: #3b82f6;
---bg: #f8fafc;
---card-bg: #ffffff;
---text: #1e293b;
---text-light: #64748b;
-}
-body {
-font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-background-color: var(--bg);
-color: var(--text);
-line-height: 1.6;
-margin: 0;
-padding: 40px 20px;
-}
-.container {
-max-width: 1000px;
-margin: 0 auto;
-}
-header {
-text-align: center;
-margin-bottom: 50px;
-}
-h1 {
-color: var(--primary);
-font-size: 2.5rem;
-margin-bottom: 10px;
-}
-.subtitle {
-color: var(--text-light);
-font-size: 1.1rem;
-}
-.grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 25px;
-}
-.card {
-background: var(--card-bg);
-border-radius: 12px;
-padding: 30px;
-text-decoration: none;
-color: inherit;
-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-border: 1px solid #e2e8f0;
-transition: all 0.3s ease;
-display: flex;
-flex-direction: column;
-}
-.card:hover {
-transform: translateY(-5px);
-box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.1), 0 4px 6px -2px rgba(30, 58, 138, 0.05);
-border-color: var(--primary-hover);
-}
-.card h2 {
-color: var(--primary);
-margin-top: 0;
-font-size: 1.4rem;
-margin-bottom: 12px;
-}
-.card p {
-color: var(--text-light);
-font-size: 0.95rem;
-margin-bottom: 20px;
-flex-grow: 1;
-}
-.card .btn {
-display: inline-block;
-color: var(--primary);
-font-weight: 600;
-font-size: 0.9rem;
-text-align: right;
-}
-.card:hover .btn {
-color: var(--primary-hover);
-text-decoration: underline;
-}
+    :root {
+      --primary: #1e3a8a;
+      --primary-hover: #3b82f6;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-light: #64748b;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: var(--primary);
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+    .autor-info {
+      color: var(--text);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .autor-info a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .autor-info a:hover {
+      text-decoration: underline;
+    }
+    .resumen-box {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 30px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
+    }
+    .resumen-box h3 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+    .pdf-container {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 15px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      margin-top: 30px;
+    }
+    .pdf-viewer {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 8px;
+    }
+    .btn-fallback {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    .btn-fallback:hover {
+      background-color: var(--primary-hover);
+    }
   </style>
 </head>
 <body>
-<!-- Pégalo justo debajo de esta línea --><!-- Sección del Encabezado Académico -->
-<div style="text-align: center;" class="contenedor-logo"><img
- src="imagenes/cetys.JPG" alt="Logo de CETYS Universidad"
- class="logo"></div>
-<div style="text-align: center;" class="titulo">
-<h1>Números Complejos</h1>
-</div>
-<div style="text-align: center;">Mauricio Odreman Vera<br>
-<a href="mailto:mauricio.odreman@cetys.mx">
-mauricio.odreman@cetys.mx </a>
-<div style="text-align: center;" class="institucion">Cetys
-Universidad, Tijuana</div>
-<br>
+
 <div class="container">
-<div class="container">
-<div style="text-align: center;" class="grid"><span
- style="font-weight: bold;">Resumen</span><br>
-Este libro de notas nace con el propósito de proporcionar a los alumnos<br>
-un material de apoyo para la parte de variable compleja del curso
-Modelos<br>
-Matemáticos de sistemas mecanicos, de manera que pueda ser util Estas
-notas cubren el material referente<br>
-a una introducción de los números complejos y contempla unicamente los<br>
-aspectos más importante referente al algebra de números complejos como<br>
-suma resta, multiplicación potencia y raices de numeros complejos.<br>
-<br>
-</div>
-</div>
-  <a href="Complejos.html" class="card">
-                Números Complejos
-</div>
+  
+  <!-- Encabezado Académico -->
+  <header>
+    <img src="imagenes/cetys.JPG" alt="Logo de CETYS Universidad" class="logo">
+    <h1>Números Complejos</h1>
+    <div class="autor-info">
+      <strong>Mauricio Odreman Vera</strong><br>
+      <a href="mailto:mauricio.odreman@cetys.mx">mauricio.odreman@cetys.mx</a><br>
+      <span>CETYS Universidad, Tijuana</span>
+    </div>
+  </header>
+
+  <!-- Sección de Resumen -->
+  <div class="resumen-box">
+    <h3>Resumen</h3>
+    <p>
+      Este libro de notas nace con el propósito de proporcionar a los alumnos un material de apoyo para la parte de variable compleja del curso Modelos Matemáticos de sistemas mecánicos, de manera que pueda ser útil. Estas notas cubren el material referente a una introducción de los números complejos y contempla únicamente los aspectos más importantes referente al álgebra de números complejos como suma, resta, multiplicación, potencia y raíces de números complejos.
+    </p>
+  </div>
+
+  <!-- Visor del PDF en la Página -->
+  <div class="pdf-container">
+    <!-- RECUERDA: Cambia "archivo.pdf" por el nombre real de tu PDF si es diferente -->
+    <object data="numeroscomplejos.pdf" type="application/pdf" class="pdf-viewer">
+      <div style="text-align: center; padding: 20px;">
+        <p>Tu navegador no puede mostrar el PDF directamente en la página.</p>
+        <a href="numeroscomplejos.pdf" class="btn-fallback" download>Descargar PDF para Ver</a>
+      </div>
+    </object>
+  </div>
+
 </div>
 
-  <object data="archivo.pdf" type="application/pdf" width="100%" height="600px">
-    <p>Tu navegador no puede mostrar este archivo. 
-    <a href="numeroscomplejos.pdf">Descarga el PDF aquí</a> para verlo.</p>
-</object>
 </body>
 </html>
+
+
+
+
 
